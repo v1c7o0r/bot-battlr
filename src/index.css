@@ -1,13 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Source+Code+Pro&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-wrap {
+  word-wrap: break-word;
+}
+
+.bot-army {
+  overflow-x: scroll;
+  min-height: 300px;
+  max-width: 100%;
+  background-color: #b7efc5;
+}
+
+.ui.grid > .row.bot-army-row {
+  flex-wrap: nowrap;
+  min-height: 100%;
+}
+
+.ui.grid {
+  padding: 0px 20px;
+}
+
+/* !styles added */
+.row {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+.bot {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  width: 30%;
+  box-shadow: 0px 5px 3px #aab;
+  transition: all 300ms ease;
+}
+.bot:hover {
+  box-shadow: 0px 0px 0px;
+}
+.bot .bot-img-container {
+  background-color: #eee;
+  text-align: center;
+  border-radius: 7px;
+}
+.bot .bot-img-container img {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+
+.bot .bot-details,
+.lower-section {
+  margin: 1rem;
+}
+.bot-details {
+  border-bottom: 1.25px solid #ccc;
+}
+.bot-details .bot-catchphrase {
+  word-wrap: break-word;
+  font-family: "Source Code Pro", monospace;
+}
+.bot-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 200;
+}
+button {
+  background-color: #ffa62b;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 300ms ease;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: #fff;
+  color: #ffa62b;
+  border: 1px solid #ccc;
+}
+.lower-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-bolt-lightning,
+.fa-heart-crack,
+.fa-shield {
+  margin-right: 0.5rem;
+}
+.fa-heart-crack {
+  color: #dc143c;
+}
+.fa-bolt-lightning {
+  color: gold;
+}
+.fa-shield {
+  color: #008000;
+}
+.fa-trash-can {
+  color: red;
+  cursor: pointer;
 }
